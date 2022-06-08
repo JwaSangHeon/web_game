@@ -22,3 +22,4 @@
 5. 웹팩 실행 - npx webpack, package.json에 scripts에 추가
 6. 바벨을 사용하기 위해 설치 - npm i -D @babel/core @babel/preset-env @babel/preset-react babel/loader
 7. @babel/core(기본적인 바벨, 최신문법을 바꿔준다.) @babel/preset-env(설정한 환경에 맞게 바꿔준다.) @babel/preset-react(jsx문법을 바꿔준다.) babel/loader(babel과 webpack을 연결해준다.)
+8. plugin들의 모음이 preset이다.

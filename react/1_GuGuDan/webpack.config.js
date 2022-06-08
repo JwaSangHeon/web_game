@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   name: "GuGuDan-Setting",
@@ -18,11 +19,23 @@ module.exports = {
         test: /\.jsx?/,
         loader: "babel-loader",
         options: {
-          presets: ["@babel/preset-env", "@babel/preset-react"],
+          presets: [
+            [
+              "@babel/preset-env",
+              {
+                targets: {
+                  browsers: ["> 5% in KR"],
+                },
+              },
+            ],
+            "@babel/preset-react",
+          ],
+          plugins: [],
         },
       },
     ],
   },
+  plugins: [new webpack.LoaderOptionsPlugin({ debug: true })],
   output: {
     path: path.join(__dirname, "dist"),
     filename: "app.js",
