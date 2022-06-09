@@ -1,7 +1,7 @@
 const React = require("react");
 const { useState, useRef } = React;
 const WordRelay = () => {
-  const [question, setQuestion] = useState("수박ㅏ");
+  const [question, setQuestion] = useState("수박");
   const [value, setValue] = useState("");
   const [result, setResult] = useState("");
   const inputRef = useRef();
