@@ -14,7 +14,7 @@ const NumberBaseball = () => {
   const [value, setValue] = useState("");
   const [results, setResults] = useState([]);
 
-  const [number, setNumber] = useState(getNumber()); //숫자 4개 이후에 바뀌는것 구현
+  const [number, setNumber] = useState(getNumber); //숫자 4개 이후에 바뀌는것 구현
 
   const onChange = (e) => {
     setValue(e.target.value);
